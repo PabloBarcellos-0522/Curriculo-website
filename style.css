@@ -1,0 +1,30 @@
+body
+{
+    background-image: url("https://www.wallpapertip.com/wmimgs/9-92315_plano-de-fundo-pc.png");
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: 1920px 1080px;
+}
+
+
+#borrao
+{
+    transition: linear 0.5s;
+    /* border-radius: 50%; */
+    height: 900px;
+    width: 580px;
+    bottom: 740px;
+    right: 580px;
+    /* margin: auto; */
+    position: relative;
+    z-index: -10;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 4px 4px 4px 4px;
+}
+
+#borrao:hover
+{
+    transition: linear 0.5s;
+    right: 250px;
+}
