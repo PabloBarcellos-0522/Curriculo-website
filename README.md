@@ -12,6 +12,6 @@ Trabalho introdutório e exclusivo, promovido pela Universidade de Vila Velha �
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- HTML
+- HTML && CSS
 - Git e Github
-- (Posteriormente CSS também)
+- (Posteriormente JavaScript também)
