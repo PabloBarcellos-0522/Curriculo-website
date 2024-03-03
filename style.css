@@ -1,30 +1,117 @@
-body
-{
-    background-image: url("https://www.wallpapertip.com/wmimgs/9-92315_plano-de-fundo-pc.png");
-    background-repeat: no-repeat;
-    /* background-position: center; */
-    background-size: 1920px 1080px;
+/* .madimi-one-regular {
+  font-family: "Madimi One", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+} */
+
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
-
-#borrao
-{
-    transition: linear 0.5s;
-    /* border-radius: 50%; */
-    height: 900px;
-    width: 580px;
-    bottom: 740px;
-    right: 580px;
-    /* margin: auto; */
-    position: relative;
-    z-index: -10;
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.5);
-    box-shadow: 4px 4px 4px 4px;
+body {
+  /* background-image: url("https://www.wallpapertip.com/wmimgs/9-92315_plano-de-fundo-pc.png"); */
+  background-image: url("./Resorces/wallpapertip_chill-wallpaper-hd_285060.jpg");
+  background-repeat: no-repeat top center/cover;
+  background-size: 100%;
+  /* overflow: hidden; */
+  z-index: 0;
+  font-family: "Oswald";
+  font-size: small;
 }
 
-#borrao:hover
-{
-    transition: linear 0.5s;
-    right: 250px;
+li {
+  /* list-style: circle; */
+  list-style-type: circle;
+}
+
+div#portfolio.visible {
+  transition: linear 0.5s;
+  opacity: 1;
+}
+
+div#portfolio.hidden {
+  opacity: 0;
+  /* transition: linear 0.1s; */
+}
+
+div#portfolio {
+  border-radius: 20px;
+  transition: linear 0.5s;
+  height: 580px;
+  width: 680px;
+  right: -20%;
+  position: relative;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  /* box-shadow: 4px 4px 4px 4px; */
+  padding: 20px 0px 0px 50px;
+}
+
+div#portfolio:hover {
+  transition: linear 0.8s;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 0px 25px 5px;
+}
+
+h1 {
+  display: inline;
+}
+
+#profissao {
+  font-style: italic;
+  margin-top: -5px;
+}
+
+#text {
+  width: 280px;
+}
+
+#especialidades {
+  display: inline;
+}
+
+/* lado direito */
+#lado_direito {
+  /* bottom: 300px; */
+  /* top: -90%; */
+  top: -330px;
+  left: 55%;
+  position: relative;
+  width: 260px;
+}
+
+#topicos {
+  color: white;
+  -webkit-text-stroke: 0.7px black;
+}
+ul#direita {
+  padding: 0px;
+}
+
+#lista_educacao {
+  margin: 0px;
+}
+#excecao {
+  margin: 10px 0px 10px;
+}
+
+#tecnologias {
+  height: 100px;
+}
+
+#coluna_list {
+  position: relative;
+  left: 115px;
+  top: -78px;
+  width: 105px;
+}
+
+#icons {
+  position: relative;
+  top: 2px;
 }

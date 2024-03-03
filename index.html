@@ -1,51 +1,120 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Profile</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Pablo Barcellos Soares</h1>
-    <img height="300px" src="https://i.pinimg.com/originals/42/f3/7c/42f37cf1c04b9249c19774bab34c79ab.png" alt="minha foto">
+    <link rel="stylesheet" href="style.css" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="portfolio">
+      <h1>Pablo Barcellos Soares</h1>
+      <h3 id="profissao">Desenvolvedor Full-Stack</h3>
 
-    <h3>Contact:</h3>
-    <ul>
-        <h4>
-            <li>
-                <img id="telefone" height="14px" src="https://cdn-icons-png.flaticon.com/512/126/126341.png"
-                alt="telefone_icone"> 
-                (27) 99897-5654
-            </li>
-            <li>
-                <img id="email" height="14px" src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png"
-                alt="email_icone"> 
-                megamentegamer123@hotmail.com
-            </li>
-            <li>
-                <img id="local" height="14px" src="https://cdn-icons-png.flaticon.com/512/4874/4874738.png"
-                alt="local_icone"> 
-                Rua da alegria,123
-            </li>
-            <li>
-                <img id="GitHub" height="14px" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-                alt="gitHub_icon">
-                <a target="_blank" href="https://github.com/PabloBarcellos-0522">GitHub</a>
-            </li>
-        </h4>
-    </ul>
+      <div id="text">
+        Já trabalhei em criação de páginas web com interfaces simples e
+        intuitivas, algoritmos e códigos específicos em Back-and, em especial
+        com API Restful em Spring boot. Minha especialidade inclui
+        <h5 id="especialidades">
+          HTML5, CSS, JavaScript (ES6), Java, Python e MySQL.
+        </h5>
+      </div>
 
-    <h3>My Skills:</h3>
-    <ul>
+      <h3 id="topicos">EXPERIENCIA</h3>
+
+      <h3>My Skills:</h3>
+      <ul>
         <li>MEGAMIND</li>
         <li>PROGRAMADOR FULLSTACK</li>
         <li>ASSEMBLY</li>
         <li>PROGRAMO NO BLOCO DE NOTAS</li>
-    </ul>
+      </ul>
+      <div id="lado_direito">
+        <h3 id="topicos">LINKS DE CONTATO</h3>
 
-    <div id="borrao"></div>
-</body>
+        <ul id="direita">
+          <h4>
+            <div>
+              <img
+                id="icons"
+                height="14px"
+                src="https://cdn-icons-png.flaticon.com/512/4874/4874738.png"
+                alt="local_icone"
+              />
+              Vitória - ES
+            </div>
+            <div>
+              <img
+                id="icons"
+                height="14px"
+                src="https://cdn-icons-png.flaticon.com/512/126/126341.png"
+                alt="telefone_icone"
+              />
+              (27) 99897-5654
+            </div>
+            <div>
+              <img
+                id="icons"
+                height="14px"
+                src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                alt="gitHub_icon"
+              />
+              <a target="_blank" href="https://github.com/PabloBarcellos-0522"
+                >GitHub/PabloBarcellos</a
+              >
+            </div>
+            <div>
+              <img
+                id="icons"
+                height="14px"
+                src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png"
+                alt="email_icone"
+              />
+              pablobarcellossoares@gmail.com
+            </div>
+          </h4>
+        </ul>
+
+        <h3 id="topicos">TECNOLOGIAS</h3>
+        <ul id="tecnologias">
+          <li>JavaScript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Git / GitHub</li>
+          <div id="coluna_list">
+            <li>Java</li>
+            <li>Spring boot</li>
+            <li>API Restful</li>
+            <li>MySQL</li>
+          </div>
+        </ul>
+
+        <h3 id="topicos">EDUCAÇÃO</h3>
+        <div>Cursando:</div>
+        <h4 id="lista_educacao">Ciência da Computação | UVV</h4>
+        <ul id="lista_educacao">
+          <li>Bacharel 2024 / 2028.</li>
+          <br />
+        </ul>
+        <h4 id="lista_educacao">Curso profissional em Java | COD3R</h4>
+        <ul id="lista_educacao">
+          <li>
+            Java: Fundamentos, Classes e Métodos, Orientação a Objetos, Stream
+            API, Tratamento de Erros, Swing, Banco de Dados, Java Persistence
+            API, Web, Spring Boot, etc...
+          </li>
+          <li id="excecao">Tempo: Setembro 2024 / Presente.</li>
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
