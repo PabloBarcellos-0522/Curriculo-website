@@ -23,10 +23,15 @@ body {
 }
 
 li {
-  /* list-style: circle; */
   list-style-type: circle;
 }
 
+h1 {
+  display: inline;
+}
+
+
+/* Portifolio */
 div#portfolio.visible {
   transition: linear 0.5s;
   opacity: 1;
@@ -42,6 +47,8 @@ div#portfolio {
   transition: linear 0.5s;
   height: 580px;
   width: 680px;
+  /* width: 50vw;
+  height: 90vh; */
   right: -20%;
   position: relative;
   z-index: 1;
@@ -58,10 +65,9 @@ div#portfolio:hover {
   box-shadow: 0px 0px 25px 5px;
 }
 
-h1 {
-  display: inline;
-}
 
+
+/* Descrição */
 #profissao {
   font-style: italic;
   margin-top: -5px;
@@ -74,6 +80,8 @@ h1 {
 #especialidades {
   display: inline;
 }
+
+
 
 /* lado direito */
 #lado_direito {
@@ -89,8 +97,14 @@ h1 {
   color: white;
   -webkit-text-stroke: 0.7px black;
 }
+
 ul#direita {
   padding: 0px;
+}
+
+#icons {
+  position: relative;
+  top: 2px;
 }
 
 #lista_educacao {
@@ -111,7 +125,20 @@ ul#direita {
   width: 105px;
 }
 
-#icons {
+
+/* Campo de mensagem */
+div#send_mensage {
+  border-radius: 20px;
+  transition: linear 0.5s;
+  height: 580px;
+  width: 160px;
+  /* width: 50vw;
+  height: 90vh; */
+  right: 0%;
   position: relative;
-  top: 2px;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  /* box-shadow: 4px 4px 4px 4px; */
+  padding: 20px 0px 0px 50px;
 }
