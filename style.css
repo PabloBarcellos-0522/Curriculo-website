@@ -30,7 +30,6 @@ h1 {
   display: inline;
 }
 
-
 /* Portifolio */
 div#portfolio.visible {
   transition: linear 0.5s;
@@ -65,8 +64,6 @@ div#portfolio:hover {
   box-shadow: 0px 0px 25px 5px;
 }
 
-
-
 /* Descrição */
 #profissao {
   font-style: italic;
@@ -80,8 +77,6 @@ div#portfolio:hover {
 #especialidades {
   display: inline;
 }
-
-
 
 /* lado direito */
 #lado_direito {
@@ -125,20 +120,25 @@ ul#direita {
   width: 105px;
 }
 
-
 /* Campo de mensagem */
 div#send_mensage {
   border-radius: 20px;
   transition: linear 0.5s;
-  height: 580px;
-  width: 160px;
+  height: 540px;
+  width: 180px;
   /* width: 50vw;
   height: 90vh; */
-  right: 0%;
+  right: 0px;
+  top: -580px;
   position: relative;
   z-index: 1;
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.1);
   /* box-shadow: 4px 4px 4px 4px; */
-  padding: 20px 0px 0px 50px;
+  padding: 35px;
+}
+
+#form {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
 }
