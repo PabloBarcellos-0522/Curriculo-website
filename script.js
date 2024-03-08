@@ -1,6 +1,6 @@
 let docTitle = document.title
 window.addEventListener("blur", () => {
-  document.title = "Come back"
+  document.title = "Come back :("
   document.getElementById("portfolio").classList.remove("visible")
   document.getElementById("portfolio").classList.add("hidden")
 })
@@ -13,7 +13,7 @@ window.addEventListener("focus", () => {
 })
 
 window.addEventListener("blur", () => {
-  document.title = "Come back"
+  document.title = "Come back :("
   document.getElementById("send_mensage").classList.remove("visible")
   document.getElementById("send_mensage").classList.add("hidden")
 })
