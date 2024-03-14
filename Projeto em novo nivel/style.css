@@ -7,6 +7,8 @@ body {
     color: #dee2e6;
     background-size: cover;
     margin: 0;
+    font-family: "Poppins", sans-serif;
+    line-height: 1;
 }
 
 header {
@@ -62,9 +64,9 @@ main {
     width: 100%;
 }
 
-div.Home {
+.Home {
     display: flex;
-    max-width: 1140px;
+    max-width: 1000px;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -75,6 +77,12 @@ div.Home {
 #my_Photo {
     width: 300px;
     padding: 0px 50px 0px 0px;
+    border-radius: 10%;
+}
+
+.Text {
+    font-size: smaller;
+    line-height: 1.6;
 }
 
 footer {
