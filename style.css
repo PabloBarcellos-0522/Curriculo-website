@@ -1,177 +1,244 @@
-/* .madimi-one-regular {
-  font-family: "Madimi One", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-} */
-
-.oswald {
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 
 body {
-  /* background-image: url("https://www.wallpapertip.com/wmimgs/9-92315_plano-de-fundo-pc.png"); */
-  background-image: url("./Resorces/wallpapertip_chill-wallpaper-hd_285060.jpg");
-  background-repeat: no-repeat top center/cover;
-  background-size: 100%;
-  /* overflow: hidden; */
-  z-index: 0;
-  font-family: "Oswald";
-  font-size: small;
+    background-color: #040725;
+    color: #dee2e6;
+    background-size: cover;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    line-height: 1;
+}
+
+header {
+    background-color: #131546;
+    display: flex;
+    font-size: 26px;
+    padding: 5px 50px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    /* margin: -8px -8px 0px; */
+}
+
+.hidden {
+    opacity: 0;
+}
+
+/* My name */
+.Header {
+    margin: 0px;
+}
+
+h2.Header {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+section {
+    margin-right: auto;
+}
+
+/* .Conteiner {
+  margin-right: auto;
+  padding: 20px;
+} */
+
+/* Navegation */
+nav {
+    align-items: center;
+    display: flex;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
 }
 
 li {
-  list-style-type: circle;
+    margin-left: 30px;
 }
 
-h1 {
-  display: inline;
+/* Main Body */
+main {
+    /* margin: 40px; */
+    padding: 30px;
+    width: 96%;
 }
 
-/* Portifolio */
-div#portfolio.visible {
-  transition: linear 0.5s;
-  opacity: 1;
+.Home {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-div#portfolio.hidden {
-  opacity: 0;
-  /* transition: linear 0.1s; */
+#my_Photo {
+    width: 300px;
+    padding: 0px 50px 0px 0px;
+    border-radius: 10%;
 }
 
-div#portfolio {
-  border-radius: 20px;
-  transition: linear 0.5s;
-  height: 580px;
-  width: 680px;
-  /* width: 50vw;
-  height: 90vh; */
-  right: -20%;
-  position: relative;
-  z-index: 1;
-  backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0px 0px 10px 1px;
-  padding: 20px 0px 0px 50px;
+.Text {
+    font-size: smaller;
+    line-height: 1.6;
 }
 
-div#portfolio:hover {
-  transition: linear 0.8s;
-  backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.4);
-  box-shadow: 0px 0px 25px 5px;
+footer {
+    background-color: aqua;
 }
 
-/* Descrição */
-#profissao {
-  font-style: italic;
-  margin-top: -5px;
+/* teste */
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
 }
 
-#text {
-  width: 280px;
+#preloader:before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    z-index: -1;
+    height: 50%;
+    transition: all 0.3s ease 0s;
+}
+#preloader:after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 50%;
+    top: 50%;
+    transition: all 0.3s ease 0s;
+    z-index: -1;
 }
 
-#especialidades {
-  display: inline;
+#preloader .line {
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    width: 280px;
+    height: 1px;
+    transition: all 0.8s ease 0s;
 }
 
-/* lado direito */
-#lado_direito {
-  /* bottom: 300px; */
-  /* top: -90%; */
-  top: -330px;
-  left: 55%;
-  position: relative;
-  width: 260px;
+#preloader .line:before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    top: 50%;
+    width: 400px;
+    height: 0%;
+    transform: translateX(0%);
+    animation: lineincrease 1000ms ease-in-out 0s forwards;
 }
 
-#topicos {
-  color: white;
-  -webkit-text-stroke: 0.7px black;
+#preloader .line:after {
+    content: "";
+    position: absolute;
+    background-color: #999;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    transform: translateX(100%);
+    animation: linemove 1200ms linear 0s infinite;
+    animation-delay: 10ms;
 }
 
-ul#direita {
-  padding: 0px;
+.line h5 {
+    color: darkgray;
+    font-size: 20px;
+    z-index: 0;
+    position: fixed;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    padding-left: 100px;
 }
 
-.icons {
-  position: relative;
-  top: 2px;
+.loaded h5 {
+    opacity: 0;
+    transition: ease-out 50ms;
 }
 
-#lista_educacao {
-  margin: 0px;
-}
-#excecao {
-  margin: 10px 0px 10px;
+#preloader.loaded .line {
+    opacity: 0;
+    height: 100% !important;
 }
 
-#tecnologias {
-  height: 100px;
+#preloader.loaded .line:after {
+    opacity: 0;
 }
 
-#coluna_list {
-  position: relative;
-  left: 115px;
-  top: -78px;
-  width: 105px;
+#preloader.loaded:before {
+    animation: preloaderfinish2 0.6s ease-in-out 500ms forwards;
+}
+#preloader.loaded:after {
+    animation: preloaderfinish 0.6s ease-in-out 500ms forwards;
 }
 
-/* Campo de mensagem */
-div#send_mensage {
-  border-radius: 20px;
-  transition: linear 0.5s;
-  height: 400px;
-  width: 180px;
-  /* left: -17%; */
-  left: -220px;
-  top: 60px;
-  position: absolute;
-  z-index: 1;
-  backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.1);
-  padding: 35px;
-  box-shadow: 0px 0px 10px 1px;
+#preloader.loaded {
+    z-index: -5;
+    transition: linear 1s;
 }
 
-div#send_mensage.visible {
-  transition: linear 0.5s;
-  opacity: 1;
-  /* border: 1px inset; */
-  box-shadow: 0px 0px 10px 1px;
+
+@keyframes lineincrease {
+    0% {
+        width: 0%;
+        height: 1px;
+    }
+
+    100% {
+        width: 100%;
+        height: 1px;
+    }
 }
 
-div#send_mensage.hidden {
-  opacity: 0;
-  /* transition: linear 0.1s; */
+@keyframes linemove {
+    0% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(560%);
+    }
 }
 
-div#send_mensage:hover {
-  transition: linear 0.8s;
-  backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.4);
-  box-shadow: 0px 0px 25px 5px;
+@keyframes preloaderfinish {
+    0% {
+        height: 5 0%;
+    }
+
+    100% {
+        top: 100%;
+    }
 }
 
-#form {
-  backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.1);
-}
+@keyframes preloaderfinish2 {
+    0% {
+        height: 5 0%;
+    }
 
-#seta {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 0%;
-  right: -10px;
-  transition: linear 0.5s;
-  padding: 210px 0px;
-}
-
-#seta.open {
-  transform: rotate(180deg);
-  transition: linear 0.2s;
+    100% {
+        height: 0%;
+    }
 }

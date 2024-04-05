@@ -1,0 +1,177 @@
+/* .madimi-one-regular {
+  font-family: "Madimi One", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+} */
+
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  /* background-image: url("https://www.wallpapertip.com/wmimgs/9-92315_plano-de-fundo-pc.png"); */
+  background-image: url("./Resorces/wallpapertip_chill-wallpaper-hd_285060.jpg");
+  background-repeat: no-repeat top center/cover;
+  background-size: 100%;
+  /* overflow: hidden; */
+  z-index: 0;
+  font-family: "Oswald";
+  font-size: small;
+}
+
+li {
+  list-style-type: circle;
+}
+
+h1 {
+  display: inline;
+}
+
+/* Portifolio */
+div#portfolio.visible {
+  transition: linear 0.5s;
+  opacity: 1;
+}
+
+div#portfolio.hidden {
+  opacity: 0;
+  /* transition: linear 0.1s; */
+}
+
+div#portfolio {
+  border-radius: 20px;
+  transition: linear 0.5s;
+  height: 580px;
+  width: 680px;
+  /* width: 50vw;
+  height: 90vh; */
+  right: -20%;
+  position: relative;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 10px 1px;
+  padding: 20px 0px 0px 50px;
+}
+
+div#portfolio:hover {
+  transition: linear 0.8s;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 0px 25px 5px;
+}
+
+/* Descrição */
+#profissao {
+  font-style: italic;
+  margin-top: -5px;
+}
+
+#text {
+  width: 280px;
+}
+
+#especialidades {
+  display: inline;
+}
+
+/* lado direito */
+#lado_direito {
+  /* bottom: 300px; */
+  /* top: -90%; */
+  top: -330px;
+  left: 55%;
+  position: relative;
+  width: 260px;
+}
+
+#topicos {
+  color: white;
+  -webkit-text-stroke: 0.7px black;
+}
+
+ul#direita {
+  padding: 0px;
+}
+
+.icons {
+  position: relative;
+  top: 2px;
+}
+
+#lista_educacao {
+  margin: 0px;
+}
+#excecao {
+  margin: 10px 0px 10px;
+}
+
+#tecnologias {
+  height: 100px;
+}
+
+#coluna_list {
+  position: relative;
+  left: 115px;
+  top: -78px;
+  width: 105px;
+}
+
+/* Campo de mensagem */
+div#send_mensage {
+  border-radius: 20px;
+  transition: linear 0.5s;
+  height: 400px;
+  width: 180px;
+  /* left: -17%; */
+  left: -220px;
+  top: 60px;
+  position: absolute;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 35px;
+  box-shadow: 0px 0px 10px 1px;
+}
+
+div#send_mensage.visible {
+  transition: linear 0.5s;
+  opacity: 1;
+  /* border: 1px inset; */
+  box-shadow: 0px 0px 10px 1px;
+}
+
+div#send_mensage.hidden {
+  opacity: 0;
+  /* transition: linear 0.1s; */
+}
+
+div#send_mensage:hover {
+  transition: linear 0.8s;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 0px 25px 5px;
+}
+
+#form {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#seta {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0%;
+  right: -10px;
+  transition: linear 0.5s;
+  padding: 210px 0px;
+}
+
+#seta.open {
+  transform: rotate(180deg);
+  transition: linear 0.2s;
+}
