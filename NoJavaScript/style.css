@@ -1,0 +1,244 @@
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+body {
+    background-color: #040725;
+    color: #dee2e6;
+    background-size: cover;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    line-height: 1;
+}
+
+header {
+    background-color: #131546;
+    display: flex;
+    font-size: 26px;
+    padding: 5px 50px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    /* margin: -8px -8px 0px; */
+}
+
+.hidden {
+    opacity: 0;
+}
+
+/* My name */
+.Header {
+    margin: 0px;
+}
+
+h2.Header {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+section {
+    margin-right: auto;
+}
+
+/* .Conteiner {
+  margin-right: auto;
+  padding: 20px;
+} */
+
+/* Navegation */
+nav {
+    align-items: center;
+    display: flex;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    margin-left: 30px;
+}
+
+/* Main Body */
+main {
+    /* margin: 40px; */
+    padding: 30px;
+    width: 96%;
+}
+
+.Home {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#my_Photo {
+    width: 300px;
+    padding: 0px 50px 0px 0px;
+    border-radius: 10%;
+}
+
+.Text {
+    font-size: smaller;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: aqua;
+}
+
+/* teste */
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
+}
+
+#preloader:before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    z-index: -1;
+    height: 50%;
+    transition: all 0.3s ease 0s;
+}
+#preloader:after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 50%;
+    top: 50%;
+    transition: all 0.3s ease 0s;
+    z-index: -1;
+}
+
+#preloader .line {
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    width: 280px;
+    height: 1px;
+    transition: all 0.8s ease 0s;
+}
+
+#preloader .line:before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    top: 50%;
+    width: 400px;
+    height: 0%;
+    transform: translateX(0%);
+    animation: lineincrease 1000ms ease-in-out 0s forwards;
+}
+
+#preloader .line:after {
+    content: "";
+    position: absolute;
+    background-color: #999;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    transform: translateX(100%);
+    animation: linemove 1200ms linear 0s infinite;
+    animation-delay: 10ms;
+}
+
+.line h5 {
+    color: darkgray;
+    font-size: 20px;
+    z-index: 0;
+    position: fixed;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    padding-left: 100px;
+}
+
+.loaded h5 {
+    opacity: 0;
+    transition: ease-out 50ms;
+}
+
+#preloader.loaded .line {
+    opacity: 0;
+    height: 100% !important;
+}
+
+#preloader.loaded .line:after {
+    opacity: 0;
+}
+
+#preloader.loaded:before {
+    animation: preloaderfinish2 0.6s ease-in-out 500ms forwards;
+}
+#preloader.loaded:after {
+    animation: preloaderfinish 0.6s ease-in-out 500ms forwards;
+}
+
+#preloader.loaded {
+    z-index: -5;
+    transition: linear 1s;
+}
+
+
+@keyframes lineincrease {
+    0% {
+        width: 0%;
+        height: 1px;
+    }
+
+    100% {
+        width: 100%;
+        height: 1px;
+    }
+}
+
+@keyframes linemove {
+    0% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(560%);
+    }
+}
+
+@keyframes preloaderfinish {
+    0% {
+        height: 5 0%;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+@keyframes preloaderfinish2 {
+    0% {
+        height: 5 0%;
+    }
+
+    100% {
+        height: 0%;
+    }
+}
