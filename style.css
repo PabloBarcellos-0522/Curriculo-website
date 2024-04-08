@@ -36,7 +36,7 @@ h2.Header {
   font-weight: 500;
 }
 
-section {
+.Conteiner {
   margin-right: auto;
 }
 
@@ -78,11 +78,6 @@ main {
   /* padding: 30px; */
   width: 100%;
 }
-/* 
-section {
-  padding: 30px;
-  width: 96%;
-} */
 
 .Home {
   display: flex;
@@ -90,8 +85,28 @@ section {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+  margin: 50px auto 16.6px 10cqmax;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.Home::after {
+  content: "";
+  height: 0.3px;
+  width: 120px;
+  background: white;
+  display: inline-block;
+  margin: 10px;
+}
+
+.about {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
-  margin-left: 10cqmax;
+  margin-left: auto;
 }
 
 .education {
@@ -122,7 +137,35 @@ section {
 }
 
 footer {
-  background-color: aqua;
+  max-width: 1000px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.box-list {
+  background-color: #131546;
+  border-radius: 10px;
+  border: 1px solid black;
+  backdrop-filter: blur(5px);
+  box-shadow: rgb(46, 46, 46) 5px 5px 5px 2px;
+  height: 80px;
+  width: 250px;
+  margin: 0px 25px;
+  transition: 0.5s;
+}
+
+.box-list:hover {
+  background-color: #131546;
+  border-radius: 10px;
+  border: 1px solid rgb(40, 40, 40);
+  backdrop-filter: blur(5px);
+  box-shadow: rgb(77, 77, 77) 5px 5px 10px 5px;
+  height: 80px;
+  width: 250px;
+  margin: 0px 25px;
 }
 
 /* teste */
