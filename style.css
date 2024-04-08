@@ -136,6 +136,7 @@ main {
   line-height: 1.6;
 }
 
+/* Footer: */
 footer {
   max-width: 1000px;
   width: 100%;
@@ -167,6 +168,16 @@ footer {
   width: 250px;
   margin: 0px 25px;
 }
+
+.box-list-desciption {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+/* icons: */
 
 /* teste */
 /*--------------------------------------------------------------
