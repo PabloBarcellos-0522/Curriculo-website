@@ -112,8 +112,7 @@ main {
 }
 
 .about,
-.education,
-.projects {
+.education {
   display: flex;
   max-width: 1000px;
   width: 100%;
@@ -123,15 +122,23 @@ main {
   margin-left: auto;
 }
 
-/* {
-  display: flex;
+.projects {
   max-width: 1000px;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-} */
+}
+
+ul.projects {
+  display: block;
+}
+
+ul.projects li {
+  display: flex;
+  margin-bottom: 50px;
+}
 
 .Images {
   width: 300px;
