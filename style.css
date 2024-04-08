@@ -3,6 +3,18 @@
   height: 0;
 }
 
+#aviso {
+  background-color: orange;
+  height: 100px;
+  font-size: larger;
+  font-weight: 900;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
 body {
   background-color: #040725;
   color: #dee2e6;
