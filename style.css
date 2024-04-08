@@ -1,43 +1,43 @@
 ::-webkit-scrollbar {
-    width: 0;
-    height: 0;
+  width: 0;
+  height: 0;
 }
 
 body {
-    background-color: #040725;
-    color: #dee2e6;
-    background-size: cover;
-    margin: 0;
-    font-family: "Poppins", sans-serif;
-    line-height: 1;
+  background-color: #040725;
+  color: #dee2e6;
+  background-size: cover;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  line-height: 1;
 }
 
 header {
-    background-color: #131546;
-    display: flex;
-    font-size: 26px;
-    padding: 5px 50px;
-    font-weight: 700;
-    font-family: "Poppins", sans-serif;
-    /* margin: -8px -8px 0px; */
+  background-color: #131546;
+  display: flex;
+  font-size: 26px;
+  padding: 5px 50px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  /* margin: -8px -8px 0px; */
 }
 
 .hidden {
-    opacity: 0;
+  opacity: 0;
 }
 
 /* My name */
 .Header {
-    margin: 0px;
+  margin: 0px;
 }
 
 h2.Header {
-    font-size: 24px;
-    font-weight: 500;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 section {
-    margin-right: auto;
+  margin-right: auto;
 }
 
 /* .Conteiner {
@@ -47,57 +47,82 @@ section {
 
 /* Navegation */
 nav {
-    align-items: center;
-    display: flex;
-    font-weight: 500;
-    font-size: 20px;
+  align-items: center;
+  display: flex;
+  font-weight: 500;
+  font-size: 15px;
 }
 
 ul {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
 }
 
 li {
-    margin-left: 30px;
+  margin-left: 30px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: rgb(48, 126, 241);
 }
 
 /* Main Body */
 main {
-    /* margin: 40px; */
-    padding: 30px;
-    width: 96%;
+  /* margin: 40px; */
+  /* padding: 30px; */
+  width: 100%;
 }
+/* 
+section {
+  padding: 30px;
+  width: 96%;
+} */
 
 .Home {
-    display: flex;
-    max-width: 1000px;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: 10cqmax;
+}
+
+.education {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .Images {
-    width: 300px;
-    padding: 0px 50px 0px 0px;
-    border-radius: 10%;
+  width: 300px;
+  padding: 0px 50px 0px 0px;
+  border-radius: 10%;
 }
 
 .Images-education {
-    width: 200px;
-    padding: 0px 50px 0px 0px;
-    border-radius: 10%;
+  width: 200px;
+  padding: 0px 50px 0px 0px;
+  border-radius: 10%;
 }
 
 .Text {
-    font-size: smaller;
-    line-height: 1.6;
+  font-size: smaller;
+  line-height: 1.6;
 }
 
 footer {
-    background-color: aqua;
+  background-color: aqua;
 }
 
 /* teste */
