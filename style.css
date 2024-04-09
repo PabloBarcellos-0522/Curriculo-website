@@ -177,6 +177,8 @@ footer {
   width: 250px;
   margin: 0px 25px;
   transition: 0.5s;
+  display: flex;
+  align-items: center;
 }
 
 .box-list:hover {
@@ -194,7 +196,7 @@ footer {
   margin: 0;
   padding: 20px;
   display: flex;
-  text-align: center;
+  text-align: start;
   justify-content: center;
 }
 
@@ -348,3 +350,9 @@ footer {
         height: 0%;
     }
 } */
+
+/* icons: */
+.icons {
+  font-size: 35px;
+  margin-left: 10px;
+}
