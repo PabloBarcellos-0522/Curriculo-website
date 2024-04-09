@@ -97,7 +97,7 @@ main {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  margin: 50px auto 16.6px 10cqmax;
+  margin: 50px auto 16.6px 20cqmax;
   font-weight: 300;
   font-size: 20px;
 }
@@ -173,12 +173,13 @@ footer {
   border: 1px solid black;
   backdrop-filter: blur(5px);
   box-shadow: rgb(46, 46, 46) 5px 5px 5px 2px;
-  height: 80px;
-  width: 250px;
+  height: 40px;
+  width: 210px;
   margin: 0px 25px;
   transition: 0.5s;
   display: flex;
   align-items: center;
+  padding: 20px;
 }
 
 .box-list:hover {
@@ -187,18 +188,24 @@ footer {
   border: 1px solid rgb(40, 40, 40);
   backdrop-filter: blur(5px);
   box-shadow: rgb(77, 77, 77) 5px 5px 10px 5px;
-  height: 80px;
-  width: 250px;
-  margin: 0px 25px;
+  height: 50px;
+  width: 220px;
+  margin: -10px 15px 0px 25px;
 }
 
-.box-list-desciption {
+/* icons: */
+.icons {
+  font-size: 35px;
+  margin-right: 10px;
+}
+
+/* .box-list-desciption {
   margin: 0;
   padding: 20px;
   display: flex;
   text-align: start;
   justify-content: center;
-}
+} */
 
 /* icons: */
 
@@ -350,9 +357,3 @@ footer {
         height: 0%;
     }
 } */
-
-/* icons: */
-.icons {
-  font-size: 35px;
-  margin-left: 10px;
-}
