@@ -65,6 +65,26 @@ nav {
   font-size: 15px;
 }
 
+.nav-menu a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #9e7f25;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-menu a:hover:before,
+.nav-menu li:hover > a:before,
+.nav-menu .active > a:before {
+  visibility: visible;
+  width: 25px;
+}
+
 ul {
   display: flex;
   list-style: none;
@@ -75,6 +95,7 @@ li {
 }
 
 a {
+  position: relative;
   color: inherit;
   text-decoration: inherit;
   transition: 0.3s;
@@ -112,7 +133,8 @@ main {
 }
 
 .about,
-.education {
+.education,
+.skills {
   display: flex;
   max-width: 1000px;
   width: 100%;
