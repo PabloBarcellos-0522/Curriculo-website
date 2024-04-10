@@ -6,8 +6,8 @@ Trabalho introdutório sobre as tecnologias da web! ♥.
 
 ## 🚀 Tecnologias
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+Esse projeto está sendo desenvolvido com as seguintes tecnologias:
 
 - HTML && CSS
-- Git e Github
-- (Posteriormente JavaScript também)
+- Git && Github
+- JavaScript (Será futuramente adicionado)
