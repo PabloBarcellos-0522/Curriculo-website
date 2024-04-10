@@ -3,6 +3,14 @@
   height: 0;
 }
 
+#Warning-width {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  z-index: -10;
+}
+
 #aviso {
   background-color: orange;
   height: 100px;
@@ -379,3 +387,28 @@ footer {
         height: 0%;
     }
 } */
+
+@media (max-width: 1000px) {
+  #Warning-width {
+    width: 100%;
+    height: 100cap;
+    display: flex;
+    z-index: 3;
+    justify-content: center;
+    /* align-items: center; */
+  }
+
+  #Warning-width div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50cqb;
+    border: red 3px solid;
+    background-color: orange;
+    margin-top: 140px;
+    top: 100px;
+    position: sticky;
+    text-align: center;
+  }
+}
