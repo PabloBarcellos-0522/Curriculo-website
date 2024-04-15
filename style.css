@@ -159,7 +159,8 @@ main {
 
 .about,
 .education,
-.skills {
+.skills,
+.contact-me {
   display: flex;
   max-width: 1000px;
   width: 100%;
@@ -244,6 +245,45 @@ footer {
 .icons {
   font-size: 35px;
   margin-right: 10px;
+}
+
+/* Contact me */
+
+#links {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  color: black;
+  font-weight: 700;
+}
+
+#links a {
+  display: flex;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  transition: 0.7s;
+  margin-left: 30px;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+#links a:first-child {
+  margin-left: auto;
+}
+#links a:last-child {
+  margin-right: auto;
+}
+
+#links a:hover {
+  background: rgba(255, 255, 255, 0.658);
+}
+
+.contact-me {
+  margin-right: auto;
+  margin-left: auto;
+  width: 303px;
+  margin: 35px auto 15px auto;
 }
 
 /* .box-list-desciption {
