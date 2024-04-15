@@ -407,12 +407,25 @@ footer {
 } */
 
 @media (max-width: 1000px) {
+
+  * {
+    display: none;
+  }
+
+  html {
+    display: block;
+  }
+
   body {
-    div.fixed {
-      position: fixed;
-      top: 0;
-      left: 0;
-    }
+    display: block;
+  }
+
+  #aviso {
+    display: none;
+  }
+
+  .Home {
+    display: none;
   }
 
   #Warning-width {
@@ -426,27 +439,17 @@ footer {
   }
 
   #Warning-width div {
-    width: 50%;
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 50cqb;
     border: red 3px solid;
     background-color: orange;
     margin-top: 140px;
-    top: 100px;
-    position: fixed;
     text-align: center;
+    color: black;
   }
 
-  .Home {
-    display: flex;
-    max-width: 1000px;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin: 50px auto 16.6px 20cqmax;
-    font-weight: 300;
-    font-size: 20px;
+  #Warning-width div h3 {
+    display: block;
   }
 }
