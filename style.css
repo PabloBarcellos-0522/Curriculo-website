@@ -3,12 +3,12 @@
   height: 0;
 }
 
-#Warning-width {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  position: absolute;
-  z-index: -10;
+.active {
+  display: initial;
+}
+
+.disable {
+  display: none;
 }
 
 img {
@@ -20,6 +20,14 @@ img {
 img:hover {
   border-right: 10px groove yellow;
   margin-right: 30px;
+}
+
+#Warning-width {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  z-index: -10;
 }
 
 #aviso {

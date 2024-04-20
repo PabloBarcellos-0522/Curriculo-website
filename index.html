@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Profile</title>
-    <link rel="shortcut icon" type="imagex/png" href="https://cdn-icons-png.flaticon.com/512/4365/4365945.png">
+    <link
+      rel="shortcut icon"
+      type="imagex/png"
+      href="https://cdn-icons-png.flaticon.com/512/4365/4365945.png"
+    />
 
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -30,102 +34,567 @@
   </div>
 
   <body>
-    <!-- ======= Header ======= -->
-    <header>
-      <section class="Conteiner">
-        <h1 class="Header">
-          Pablo Barcellos <br />
-          <h2 class="Header">I'm Coder</h2>
-        </h1>
-      </section>
-      <nav>
-        <ul>
-          <li class="Header nav-menu"><a href="./index.html">Home</a></li>
-          <li class="nav-menu"><a href="./projects.html">Projects</a></li>
-          <li class="nav-menu"><a href="./skills.html">Skills</a></li>
-          <li class="nav-menu"><a href="./education.html">Education</a></li>
-          <li class="nav-menu">
-            <a href="./contact-me.html">Contact me</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- End Header -->
-
     <!-- ======= Home Section ======= -->
-    <main>
-      <h2 class="Home">ABOUT</h2>
-      <div class="about">
-        <img class="Images" src="./Resouces/Profile_image.jpg" alt="My Profile_image" />
-        <div class="Text">
-          <p>
-            Sou um entusiasta da programação que iniciou sua carreira profissional no mundo da
-            tecnologia em novembro, consolidando uma sólida trajetória como freelancer. Meu foco
-            principal é no desenvolvimento Full Stack e na manutenção de problemas, onde aplico meu
-            conhecimento em diversas tecnologias para criar soluções robustas e eficientes.
-          </p>
-          <p>
-            Possuo habilidades versáteis que abrangem desde a construção de páginas web com HTML,
-            CSS e JavaScript até o desenvolvimento de lógica de negócios utilizando Python, Java e
-            SQL. Minha jornada tem sido marcada pela busca constante de aprendizado e aprimoramento,
-            garantindo que eu esteja sempre atualizado com as melhores práticas e tendências do
-            setor.
-          </p>
-          <p>
-            Como profissional, sou reconhecido pela minha dedicação e comprometimento em entregar
-            resultados de alta qualidade. Trabalho de maneira autônoma e eficiente, garantindo que
-            cada projeto atenda às necessidades específicas do cliente. Minha abordagem proativa e
-            minha capacidade de resolver problemas me destacam como um colaborador valioso em
-            qualquer equipe.
-          </p>
-          <p>
-            Estou animado com as oportunidades de crescimento e desafios que a programação oferece,
-            e estou aberto a explorar novas áreas e tecnologias. Se você procura um desenvolvedor
-            backend apaixonado, comprometido e com uma base sólida de conhecimentos, estou pronto
-            para contribuir para o sucesso do seu projeto.
-          </p>
+    <section id="Home-page" class="active">
+      <!-- ======= Header ======= -->
+      <header>
+        <section class="Conteiner">
+          <h1 class="Header">
+            Pablo Barcellos <br />
+            <h2 class="Header">I'm Coder</h2>
+          </h1>
+        </section>
+        <nav>
+          <ul>
+            <li class="Header nav-menu"><a onclick="Home()" href="#Home-page">Home</a></li>
+            <li class="nav-menu"><a onclick="Projects()" href="#Projects-page">Projects</a></li>
+            <li class="nav-menu"><a onclick="Skills()" href="#Skills-page">Skills</a></li>
+            <li class="nav-menu"><a onclick="Education()" href="#Education-page">Education</a></li>
+            <li class="nav-menu">
+              <a onclick="Contact()" href="#Contact-page">Contact me</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- End Header -->
+
+      <main>
+        <h2 class="Home">ABOUT</h2>
+        <div class="about">
+          <img class="Images" src="./Resouces/Profile_image.jpg" alt="My Profile_image" />
+          <div class="Text">
+            <p>
+              Sou um entusiasta da programação que iniciou sua carreira profissional no mundo da
+              tecnologia em novembro, consolidando uma sólida trajetória como freelancer. Meu foco
+              principal é no desenvolvimento Full Stack e na manutenção de problemas, onde aplico
+              meu conhecimento em diversas tecnologias para criar soluções robustas e eficientes.
+            </p>
+            <p>
+              Possuo habilidades versáteis que abrangem desde a construção de páginas web com HTML,
+              CSS e JavaScript até o desenvolvimento de lógica de negócios utilizando Python, Java e
+              SQL. Minha jornada tem sido marcada pela busca constante de aprendizado e
+              aprimoramento, garantindo que eu esteja sempre atualizado com as melhores práticas e
+              tendências do setor.
+            </p>
+            <p>
+              Como profissional, sou reconhecido pela minha dedicação e comprometimento em entregar
+              resultados de alta qualidade. Trabalho de maneira autônoma e eficiente, garantindo que
+              cada projeto atenda às necessidades específicas do cliente. Minha abordagem proativa e
+              minha capacidade de resolver problemas me destacam como um colaborador valioso em
+              qualquer equipe.
+            </p>
+            <p>
+              Estou animado com as oportunidades de crescimento e desafios que a programação
+              oferece, e estou aberto a explorar novas áreas e tecnologias. Se você procura um
+              desenvolvedor backend apaixonado, comprometido e com uma base sólida de conhecimentos,
+              estou pronto para contribuir para o sucesso do seu projeto.
+            </p>
+          </div>
         </div>
+      </main>
+
+      <h2 class="Home">INTERESTS</h2>
+      <footer>
+        <ul>
+          <div class="box-list">
+            <div class="icons">
+              <i class="ri-code-box-line icons" style="color: #ffbb2c"></i>
+            </div>
+
+            <h3 class="box-list-desciption">Software Development</h3>
+          </div>
+          <div class="box-list">
+            <i class="ri-settings-2-fill icons" style="color: #5578ff"></i>
+            <h3 class="box-list-desciption">Backend Development</h3>
+          </div>
+          <div class="box-list">
+            <i class="ri-window-fill icons" style="color: #e80368"></i>
+            <h3 class="box-list-desciption">Web Development</h3>
+          </div>
+        </ul>
+
+        <ul>
+          <div class="box-list">
+            <i class="ri-code-s-slash-fill icons" style="color: #28a745"></i>
+            <h3 class="box-list-desciption">Software Engineering</h3>
+          </div>
+          <div class="box-list">
+            <i class="ri-database-2-line icons" style="color: #f1081f"></i>
+            <h3 class="box-list-desciption">Database</h3>
+          </div>
+          <div class="box-list">
+            <i class="ri-file-list-3-line icons" style="color: #47aeff"></i>
+            <h3 class="box-list-desciption">Algorithms</h3>
+          </div>
+        </ul>
+      </footer>
+
+      <div id="aviso">
+        Atenção: Este site ainda está em desenvolvimento/aperfeiçoamento, novas adições estão a
+        caminho: JavaScript
       </div>
-    </main>
+    </section>
 
-    <h2 class="Home">INTERESTS</h2>
-    <footer>
-      <ul>
-        <div class="box-list">
-          <div class="icons"><i class="ri-code-box-line icons" style="color: #ffbb2c"></i></div>
+    <!-- ======= Projects Section ======= -->
+    <section id="Projects-page" class="disable">
+      <!-- ======= Header ======= -->
+      <header>
+        <section class="Conteiner">
+          <h1 class="Header">
+            Pablo Barcellos <br />
+            <h2 class="Header">I'm Coder</h2>
+          </h1>
+        </section>
+        <nav>
+          <ul>
+            <li class="Header nav-menu"><a onclick="Home()" href="#Home-page">Home</a></li>
+            <li class="nav-menu"><a onclick="Projects()" href="#Projects-page">Projects</a></li>
+            <li class="nav-menu"><a onclick="Skills()" href="#Skills-page">Skills</a></li>
+            <li class="nav-menu"><a onclick="Education()" href="#Education-page">Education</a></li>
+            <li class="nav-menu">
+              <a onclick="Contact()" href="#Contact-page">Contact me</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- End Header -->
 
-          <h3 class="box-list-desciption">Software Development</h3>
+      <main>
+        <h2 class="Home">PROJECTS</h2>
+        <div>
+          <ul class="projects Text">
+            <li>
+              <a target="_blank" href="https://github.com/PabloBarcellos-0522/pass-in"
+                ><img
+                  height="250px"
+                  src="https://blog.softaliza.com.br/wp-content/uploads/2022/08/WhatsApp-Image-2022-08-09-at-09.58.12.jpeg"
+                  alt="Check-in"
+              /></a>
+              <div>
+                <h2>
+                  <a target="_blank" href="https://github.com/PabloBarcellos-0522/pass-in"
+                    >Pass-in</a
+                  >
+                </h2>
+                <p>
+                  Ele é uma aplicação de gestão de participantes em eventos presenciais. Utilizando
+                  as tecnologias Java, Spring Boot, API Rest, Maven entre outras eu consegui me
+                  aprofundar no funcionamento básico das APIs em geral
+                </p>
+              </div>
+            </li>
+            <li>
+              <a target="_blank" href="https://pablobarcellos-0522.github.io/social-links/"
+                ><img
+                  height="247px"
+                  src="./Resouces/Captura de tela 2024-04-08 202952.png"
+                  alt="Social-Links"
+              /></a>
+              <div>
+                <h2>
+                  <a target="_blank" href="https://github.com/PabloBarcellos-0522/social-links"
+                    >Social-Links</a
+                  >
+                </h2>
+                <p>
+                  Um projeto perfeito para armazenar links de suas redes socias preferidas <3
+                  <br />
+                  Tecnologias: Html, css, javaScript, Figma etc...
+                  <br />
+                  <br />
+                  Este é um modelo criado por mim em um evento da Rocketseat que estou
+                  disponibilizando em meu
+                  <a href="https://github.com/PabloBarcellos-0522/social-links">Github</a> com
+                  licença aberta para qualquer um editar de sua forma e gosto
+                </p>
+              </div>
+            </li>
+            <li>
+              <a target="_blank" href="https://pablobarcellos-0522.github.io/Check-in-Fullstack/"
+                ><img
+                  height="308px"
+                  src="./Resouces/Captura de tela 2024-04-20 081514.png"
+                  alt="Check-in-Fullstack"
+              /></a>
+              <div>
+                <h2>
+                  <a
+                    target="_blank"
+                    href="https://github.com/PabloBarcellos-0522/Check-in-Fullstack"
+                    >Check-in-Fullstack</a
+                  >
+                </h2>
+                <p>
+                  Um gerenciador de inscrições e Check-in de clientes
+                  <br />
+                  Tecnologias: Html, css, javaScript, Figma etc...
+                  <br />
+                  <br />
+                  Este é um modelo criado por mim em um evento da Rocketseat que estou
+                  disponibilizando em meu
+                  <a href="https://github.com/PabloBarcellos-0522/social-links">Github</a> com
+                  licença aberta para qualquer um editar de sua forma e gosto
+                </p>
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="box-list">
-          <i class="ri-settings-2-fill icons" style="color: #5578ff"></i>
-          <h3 class="box-list-desciption">Backend Development</h3>
-        </div>
-        <div class="box-list">
-          <i class="ri-window-fill icons" style="color: #e80368"></i>
-          <h3 class="box-list-desciption">Web Development</h3>
-        </div>
-      </ul>
+      </main>
 
-      <ul>
-        <div class="box-list">
-          <i class="ri-code-s-slash-fill icons" style="color: #28a745"></i>
-          <h3 class="box-list-desciption">Software Engineering</h3>
-        </div>
-        <div class="box-list">
-          <i class="ri-database-2-line icons" style="color: #f1081f"></i>
-          <h3 class="box-list-desciption">Database</h3>
-        </div>
-        <div class="box-list">
-          <i class="ri-file-list-3-line icons" style="color: #47aeff"></i>
-          <h3 class="box-list-desciption">Algorithms</h3>
-        </div>
-      </ul>
-    </footer>
+      <div id="aviso">
+        Atenção: Este site ainda está em desenvolvimento/aperfeiçoamento, novas adições estão a
+        caminho: JavaScript
+      </div>
+    </section>
 
-    <div id="aviso">
-      Atenção: Este site ainda está em desenvolvimento/aperfeiçoamento, novas adições estão a
-      caminho: JavaScript
-    </div>
+    <!-- ======= Skills Section ======= -->
+    <section id="Skills-page" class="disable">
+      <!-- ======= Header ======= -->
+      <header>
+        <section class="Conteiner">
+          <h1 class="Header">
+            Pablo Barcellos <br />
+            <h2 class="Header">I'm Coder</h2>
+          </h1>
+        </section>
+        <nav>
+          <ul>
+            <li class="Header nav-menu"><a onclick="Home()" href="#Home-page">Home</a></li>
+            <li class="nav-menu"><a onclick="Projects()" href="#Projects-page">Projects</a></li>
+            <li class="nav-menu"><a onclick="Skills()" href="#Skills-page">Skills</a></li>
+            <li class="nav-menu"><a onclick="Education()" href="#Education-page">Education</a></li>
+            <li class="nav-menu">
+              <a onclick="Contact()" href="#Contact-page">Contact me</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- End Header -->
+
+      <main>
+        <h2 class="Home">SKILLS</h2>
+        <div class="skills">
+          <table border="2">
+            <thead>
+              <th><div class="cell">Tecnologia</div></th>
+              <th><div class="cell">Nível (0-10)</div></th>
+              <th><div class="cell">framework?</div></th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="cell-icon">
+                    <img
+                      class="icons"
+                      src="https://devicons.dev.br/icons?icon=Java&size=50&theme=light"
+                      alt="icon"
+                    />Java
+                  </div>
+                </td>
+                <td><div class="cell">9</div></td>
+                <td><div class="cell">Spring Rest API</div></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="cell-icon">
+                    <img
+                      class="icons"
+                      src="https://devicons.dev.br/icons?icon=HTML&size=50&theme=light"
+                      alt="icon"
+                    />HTML5
+                  </div>
+                </td>
+                <td><div class="cell">8</div></td>
+                <td><div class="cell">-</div></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="cell-icon">
+                    <img
+                      class="icons"
+                      src="https://devicons.dev.br/icons?icon=CSS&size=50&theme=light"
+                      alt="icon"
+                    />CSS3
+                  </div>
+                </td>
+                <td><div class="cell">8</div></td>
+                <td><div class="cell">-</div></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="cell-icon">
+                    <img
+                      class="icons"
+                      src="https://devicons.dev.br/icons?icon=JavaScript&size=50&theme=light"
+                      alt="icon"
+                    />JavaScript
+                  </div>
+                </td>
+                <td><div class="cell">6</div></td>
+                <td><div class="cell">React</div></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="cell-icon">
+                    <img
+                      class="icons"
+                      src="https://devicons.dev.br/icons?icon=MySQL&size=50&theme=light"
+                      alt="icon"
+                    />MySQL
+                  </div>
+                </td>
+                <td><div class="cell">6</div></td>
+                <td><div class="cell">-</div></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <div class="cell">
+                  <td colspan="4">@PabloBarcellos_dev !</td>
+                </div>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </main>
+
+      <h2 class="Home">INTERESTS</h2>
+      <footer>
+        <ul>
+          <div class="box-list">
+            <div class="icons"><i class="ri-code-box-line icons" style="color: #ffbb2c"></i></div>
+
+            <h3 class="box-list-desciption">Software Development</h3>
+          </div>
+          <div class="box-list">
+            <i class="ri-settings-2-fill icons" style="color: #5578ff"></i>
+            <h3 class="box-list-desciption">Backend Development</h3>
+          </div>
+          <div class="box-list">
+            <i class="ri-window-fill icons" style="color: #e80368"></i>
+            <h3 class="box-list-desciption">Web Development</h3>
+          </div>
+        </ul>
+
+        <ul>
+          <div class="box-list">
+            <i class="ri-code-s-slash-fill icons" style="color: #28a745"></i>
+            <h3 class="box-list-desciption">Software Engineering</h3>
+          </div>
+          <div class="box-list">
+            <i class="ri-database-2-line icons" style="color: #f1081f"></i>
+            <h3 class="box-list-desciption">Database</h3>
+          </div>
+          <div class="box-list">
+            <i class="ri-file-list-3-line icons" style="color: #47aeff"></i>
+            <h3 class="box-list-desciption">Algorithms</h3>
+          </div>
+        </ul>
+      </footer>
+
+      <div id="aviso">
+        Atenção: Este site ainda está em desenvolvimento/aperfeiçoamento, novas adições estão a
+        caminho: JavaScript
+      </div>
+    </section>
+
+    <!-- ======= Education Section ======= -->
+    <section id="Education-page" class="disable">
+      <!-- ======= Header ======= -->
+      <header>
+        <section class="Conteiner">
+          <h1 class="Header">
+            Pablo Barcellos <br />
+            <h2 class="Header">I'm Coder</h2>
+          </h1>
+        </section>
+        <nav>
+          <ul>
+            <li class="Header nav-menu"><a onclick="Home()" href="#Home-page">Home</a></li>
+            <li class="nav-menu"><a onclick="Projects()" href="#Projects-page">Projects</a></li>
+            <li class="nav-menu"><a onclick="Skills()" href="#Skills-page">Skills</a></li>
+            <li class="nav-menu"><a onclick="Education()" href="#Education-page">Education</a></li>
+            <li class="nav-menu">
+              <a onclick="Contact()" href="#Contact-page">Contact me</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- End Header -->
+
+      <main>
+        <h2 class="Home">EDUCATION</h2>
+        <br /><br />
+
+        <div class="education">
+          <img
+            class="Images-education"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtQH9TMZ87Tai4ux6ENcDKIr1ydZKRISW8RLmCdL7KGw&s"
+            alt="UVV logo"
+          />
+          <div class="Text">
+            <p>
+              <a target="_blank" href="https://uvv.br/">Universidade Vila Velha (UVV), </a>
+              uma das melhores universidades particulares do Brasil. lá eu tive a oportunidade de
+              mergulhar profundamente no mundo da Ciência da Computação. Equanto estou estudando lá,
+              estou sendo exposto a uma ampla gama de disciplinas, desde os fundamentos teóricos da
+              computação até aplicações práticas em desenvolvimento de software. A atmosfera
+              acadêmica inspiradora e os professores dedicados me proporcionaram uma base sólida em
+              algoritmos, estruturas de dados, programação orientada a objetos UX e UI designer e
+              muito mais. Além disso, participei de projetos de pesquisa e colaborações
+              interdisciplinares que enriqueceram minha experiência e me prepararam para os desafios
+              do mundo profissional.
+            </p>
+          </div>
+        </div>
+
+        <br /><br />
+
+        <div class="education">
+          <img
+            class="Images-education"
+            src="https://yt3.googleusercontent.com/ytc/AIdro_kO9-Rchy8VH12uaUEweHj0Mue9YfunD6R9QMVRnx05IQ=s900-c-k-c0x00ffffff-no-rj"
+            alt="Cod3r logo"
+          />
+
+          <div class="Text">
+            <p>
+              <a target="_blank" href="https://www.cod3r.com.br/">Cod3r, </a>
+              Minha jornada na Cod3r foi uma experiência transformadora. Na plataforma, mergulhei
+              fundo nas tecnologias de desenvolvimento Java e Spring boot mais modernas e
+              relevantes. Através de cursos práticos e hands-on, pude adquirir habilidades
+              essenciais principalmente em java e outras ferramentas amplamente utilizadas no
+              mercado de trabalho. Além disso, a Cod3r me proporcionou um ambiente de aprendizado
+              dinâmico, com instrutores experientes e uma comunidade vibrante de colegas
+              desenvolvedores, o que contribuiu significativamente para o meu crescimento
+              profissional.
+            </p>
+          </div>
+        </div>
+
+        <br /><br />
+
+        <div class="education">
+          <img
+            class="Images-education"
+            src="https://asimov.academy/wp-content/uploads/2023/09/cropped-favicon-1-1.png"
+            alt="Asimov logo"
+          />
+
+          <div class="Text">
+            <p>
+              <a target="_blank" href="https://asimov.academy/">Asimov academy, </a>
+              ela desempenhou um papel fundamental em minha jornada educacional e profissional. Esta
+              instituição de ensino online oferece cursos abrangentes e de alta qualidade em uma
+              variedade de áreas, desde desenvolvimento de software até inteligência artificial e
+              ciência de dados. Na Asimov Academy, tive acesso a recursos educacionais de ponta,
+              incluindo aulas interativas, projetos práticos e materiais didáticos detalhados. Os
+              instrutores experientes e especialistas da indústria proporcionaram um ambiente de
+              aprendizado estimulante e desafiador, incentivando-me a explorar novas tecnologias e
+              aprofundar meu conhecimento em áreas de interesse específicas. Graças à Asimov
+              Academy, estou preparado para enfrentar os desafios e oportunidades do mundo da
+              tecnologia com confiança e competência.
+            </p>
+          </div>
+        </div>
+        <br /><br />
+
+        <div class="education">
+          <img
+            class="Images-education"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiQkH4IWka6MT1LHU_ZNdqMI-wJXwoJdXrHeHMX2lSY4tcWSe0rAzipuZ-IyzzqTnZm20&usqp=CAU"
+            alt="Rocketseat logo"
+          />
+
+          <div class="Text">
+            <p>
+              <a target="_blank" href="https://www.rocketseat.com.br/">Rocketseat, </a>
+              uma plataforma completa para aprender programação, minha jornada na Rocketseat foi
+              incrivelmente enriquecedora e desafiadora. Como um bootcamp intensivo de
+              desenvolvimento web, a Rocketseat me proporcionou uma imersão completa no ecossistema
+              tecnológico mais atualizado e nas práticas de desenvolvimento ágeis. Através de
+              workshops práticos, desafios de codificação e projetos reais, pude aprimorar minhas
+              habilidades em tecnologias como HTML, CSS, JavaScript, React, entre outras. Além
+              disso, a Rocketseat é conhecida por sua comunidade engajada e recursos educacionais
+              inovadores, que me permitiram estar sempre atualizado com as últimas tendências e
+              melhores práticas da indústria de tecnologia.
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <div id="aviso">
+        Atenção: Este site ainda está em desenvolvimento/aperfeiçoamento, novas adições estão a
+        caminho: JavaScript
+      </div>
+    </section>
+
+    <!-- ======= Contact-me Section ======= -->
+    <section id="Contact-me-page" class="disable">
+      <!-- ======= Header ======= -->
+      <header>
+        <section class="Conteiner">
+          <h1 class="Header">
+            Pablo Barcellos <br />
+            <h2 class="Header">I'm Coder</h2>
+          </h1>
+        </section>
+        <nav>
+          <ul>
+            <li class="Header nav-menu"><a onclick="Home()" href="#Home-page">Home</a></li>
+            <li class="nav-menu"><a onclick="Projects()" href="#Projects-page">Projects</a></li>
+            <li class="nav-menu"><a onclick="Skills()" href="#Skills-page">Skills</a></li>
+            <li class="nav-menu"><a onclick="Education()" href="#Education-page">Education</a></li>
+            <li class="nav-menu">
+              <a onclick="Contact()" href="#Contact-page">Contact me</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- End Header -->
+
+      <main>
+        <h2 class="Home">Contact me</h2>
+
+        <h3 class="contact-me">Venha bater um papo comigo ♥</h3>
+        <ul id="links">
+          <a
+            href="https://docs.google.com/document/d/1z50B94TMQX9rZcbtWAwi-ttJ0nIWVTiF/edit?usp=sharing&ouid=102789624141715236201&rtpof=true&sd=true"
+            target="_blank"
+          >
+            <img
+              class="icons-sociais"
+              width="50px"
+              src="https://cdn-icons-png.flaticon.com/512/8347/8347432.png"
+              alt="icon"
+            />
+            Resume</a
+          >
+          <a href="https://wa.me/5527998975654" target="_blank">
+            <img
+              class="icons-sociais"
+              width="50px"
+              src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png"
+              alt="icon"
+            />
+            WhatsApp</a
+          >
+          <a href="https://github.com/PabloBarcellos-0522" target="_blank"
+            ><img
+              class="icons-sociais"
+              src="https://devicons.dev.br/icons?icon=Github&size=50&theme=dark"
+              alt="icon"
+            />
+            GitHub</a
+          >
+        </ul>
+      </main>
+
+      <div id="aviso">
+        Atenção: Este site ainda está em desenvolvimento/aperfeiçoamento, novas adições estão a
+        caminho: JavaScript
+      </div>
+    </section>
 
     <div id="preloader">
       <div class="line"><h5>Hello</h5></div>
