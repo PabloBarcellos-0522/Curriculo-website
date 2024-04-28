@@ -10,4 +10,4 @@ Esse projeto está sendo desenvolvido com as seguintes tecnologias:
 
 - HTML && CSS
 - Git && Github
-- JavaScript (Será futuramente adicionado)
+- JavaScript
